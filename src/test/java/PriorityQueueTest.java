@@ -17,10 +17,10 @@ import java.util.stream.Stream;
 public class PriorityQueueTest {
     static Stream<Arguments> stringIntAndListProvider(){
         return Stream.of(
-          Arguments.of(new int[]{5,4,2,3},new int[]{2,3,4,6}),
-          Arguments.of(new int[]{5,4,3,2,1},new int[]{1,2,3,4,6}),
+          Arguments.of(new int[]{5,4,2,3},new int[]{2,3,4,5}),
+          Arguments.of(new int[]{5,4,3,2,1},new int[]{1,2,3,4,5}),
           Arguments.of(new int[]{6,8,9,4,1},new int[]{1,4,6,8,9}),
-          Arguments.of(new int[]{6,5,4,3,2,1},new int[]{1,2,3,4,7,6}),
+          Arguments.of(new int[]{6,5,4,3,2,1},new int[]{1,2,3,4,5,6}),
           Arguments.of(new int[]{2,3,1},new int[]{1,2,3})
         );
     }
